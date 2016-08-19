@@ -12,18 +12,4 @@ module func_demo {
 
     helloWorld();
     helloWorld("John");
-
-    let squareIt: (rect: {h: number; w?: number; }) => number;
-
-    let rectA = { h: 7 };
-    let rectB = { h: 7, w: 12};
-
-    squareIt = function (rect) {
-        if (rect.w !== undefined) {
-            return rect.h * rect.w;
-        }
-        return rect.h * rect.h;
-    };
-    console.log(squareIt(rectA));
-    console.log(squareIt(rectB));
 }
